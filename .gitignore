@@ -13,7 +13,9 @@
 # generated files - android project subfolder
 platform/android/bin/
 platform/android/gen/
-platform/android/assets/*
+platform/android/assets/
+platform/android/.staging/
+
 
 # generated files
 bin/
