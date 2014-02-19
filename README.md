@@ -10,3 +10,12 @@ For the original which is for version 2.9 check:
 
 - https://play.google.com/store/apps/details?id=com.eas.cordova.browser
 - https://github.com/es92/CordovaBrowser/
+
+To use:
+
+    cd platforms/android
+    android update project --subprojects -p .
+    cd -
+    cordova build
+
+    
