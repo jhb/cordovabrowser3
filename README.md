@@ -20,4 +20,4 @@ To use:
     cd -
     cordova build
 
-    
+A binary (apk) can be found here: https://baach.de/Members/jhb/cordova-browser-3-apk/view    
