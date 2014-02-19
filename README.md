@@ -1,5 +1,5 @@
-CordovaBrowser3
-===============
+Cordova Browser 3
+=================
 
 A port of Evan Shapiro's Cordova Browser to cordova 3.3 to the 3.x API. 
 
