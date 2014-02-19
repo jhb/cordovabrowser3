@@ -11,10 +11,10 @@
 *.class
 
 # generated files - android project subfolder
-platform/android/bin/
-platform/android/gen/
-platform/android/assets/
-platform/android/.staging/
+platforms/android/bin/
+platforms/android/gen/
+platforms/android/assets/
+platforms/android/.staging/
 
 
 # generated files
