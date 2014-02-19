@@ -13,7 +13,7 @@
 # generated files - android project subfolder
 platforms/android/bin/
 platforms/android/gen/
-platforms/android/assets/
+platforms/android/assets/www/*
 platforms/android/.staging/
 
 
@@ -26,7 +26,7 @@ local.properties
 proguard-project.txt
 
 # IOS / Xcode
-build/*
+#build/*
 *.pbxuser
 !default.pbxuser
 *.mode1v3
