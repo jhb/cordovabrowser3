@@ -1,0 +1,36 @@
+.left {
+    right: 100%;
+    left: -100%;
+}
+
+.center {
+    right: 0;
+    left: 0;
+}
+
+.right {
+    left: 100%;
+    right: -100%;
+
+}
+
+.transition {
+    -webkit-transition: all .4s ease-in-out 0s;
+    -moz-transition: all .4s ease-in-out 0s;
+    -o-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;
+}
+
+.up {
+    top: -100%;
+    bottom: 100%;
+}
+
+.down {
+    top: 0;
+    bottom: 0;
+}
+
+.faded {
+    opacity: 0;
+}

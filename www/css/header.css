@@ -1,0 +1,46 @@
+#header {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #dddddd;
+    height: 2.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #d2d2d2;
+    z-index: 800;
+}
+
+#header li {
+    display: inline;
+    list-style-type: none;
+}
+
+#title {
+    color: black;
+    font-size: 1.5em;
+    padding-left: .5em;
+    line-height: 1.75em;
+}
+
+
+#moreButton {
+    padding-top: .375em;
+    padding-bottom: .375em;
+    padding-right: 1em;
+    padding-left: 1em;
+    float: right;
+}
+
+.headerButton {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 2.5em;
+    background: #dddddd;
+    border: none;
+}
+
+
+#moreButton img {
+    height: 1.75em;
+}

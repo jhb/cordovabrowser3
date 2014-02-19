@@ -1,0 +1,38 @@
+.dialog {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    padding: .5em;
+    z-index: 1000;
+}
+
+.dialog input[type=text] {
+    width: 90%;
+    font-size: 1.25em;
+    padding: .5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#createUrlCancel {
+    float: right;
+    margin-top: .5em;
+}
+
+#deleteUrl {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+#editUrl {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+#cancelUrlSettings {
+    width: 100%;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0 user-scalable=0' />
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/content.css" rel="stylesheet" type="text/css">
+    <link href="css/dialog.css" rel="stylesheet" type="text/css">
+    <link href="css/settings.css" rel="stylesheet" type="text/css">
+    <link href="css/transitions.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <script src="libs/jq/jquery-1.8.2.min.js"></script>
+    <script src="libs/jq/addTappableJQPlugin.js"></script>
+    <script src="libs/jq/addEnterJQPlugin.js"></script>
+    <script src="cordova.js"></script>
+    <script src="libs/UTIL.js"></script>
+    <script src="libs/Transitioner.js"></script>
+    <script src="js/SavedHistory.js"></script>
+    <script src="js/CreateUrlDialog.js"></script>
+    <script src="js/UrlSettingsDialog.js"></script>
+    <script src="js/SettingsView.js"></script>
+    <script src="js/BrowserHistoryManager.js"></script>
+    <script src="js/LoaderApp.js"></script>
+
+    <title>Cordova Browser</title>
+    <script>
+        document.addEventListener('deviceready', function() {
+            window.launch();
+        });
+
+        window.launch = function(){
+            window.util = _UTIL;
+            window.util.patchFnBind();
+            $(document.body).height('100%');
+            new LoaderApp();
+        }
+    </script>
+</head>
+<body>
+    <ul id="header">
+        <li id="title">
+            Cordova Browser 3
+        </li>
+        <li>
+             <button class='headerButton' id="moreButton">
+                <img src="more.png"></img>
+             </button>   
+        </li>
+    </ul>
+    <div id="content">
+
+        <ul id="urls" class="center">
+            <li>
+                <button id='appendUrl' class="urlButton androidButton" > + </button>
+            </li>
+        </ul>
+
+        <div id="settings" class="right">
+                <span id="settingsButtons">
+                    <button id="deleteAll" class="androidButton androidDeleteButton"> delete all</button>
+                    <button id="settingsBack" class="androidButton">back</button>
+                </span>
+       			<span id="tip"> Tip: Hold down on a link for more options</span>
+       			<span id="credit">Upgrade of <a href="#" onclick="window.open('https://play.google.com/store/apps/details?id=com.eas.cordova.browser','_system')">Evan Shapiro's Cordova Browser</a> to cordova 3.3</span>
+        </div>
+
+    </div>
+    <div id="createUrlDialog" class="dialog up">
+        <input id="createUrlInput" type="text" placeholder="url" autocorrect="off" autocomplete="off" autocapitalize="off"/>
+        <button id="createUrlCancel" class="androidButton"> cancel </button>
+    </div>
+    <div id="urlSettingsDialog" class="dialog up">
+        <button id="deleteUrl" class="androidButton androidDeleteButton"> delete </button>
+        <button id="editUrl" class="androidButton"> edit </button>
+        <button id="cancelUrlSettings" class="androidButton"> cancel </button>
+    </div>
+</body>
+</html>
