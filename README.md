@@ -20,4 +20,5 @@ To use:
     cd -
     cordova build
 
-A binary (apk) can be found here: https://baach.de/Members/jhb/cordova-browser-3-apk/view    
+A binary (apk) can be found on https://play.google.com/store/apps/details?id=de.baach.cordovabrowser3 or 
+directly on https://baach.de/Members/jhb/cordova-browser-3-apk/view .
