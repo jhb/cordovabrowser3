@@ -1,18 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="de.baach.cordovabrowser3" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Hello Cordova</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
+<widget id="de.baach.cordovabrowser3" version="0.0.2 (cordova 3.4)" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <feature name="Battery">
-        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
     </feature>
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
     <feature name="Contacts">
         <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
@@ -20,17 +28,8 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="Accelerometer">
-        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
-    </feature>
-    <feature name="Compass">
-        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
-    </feature>
-    <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
     </feature>
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
@@ -44,21 +43,18 @@
     <feature name="Media">
         <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
     </feature>
-    <feature name="Capture">
-        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
     <name>CordovaBrowser 3</name>
     <description>
-        Allows to run remote cordova/phonegap apps with full access to all cordova apis. Has a refresh button. Upgrade of https://play.google.com/store/apps/details?id=com.eas.cordova.browser
+        Allows to run remote cordova/phonegap apps with full access to all cordova apis. Has a refresh button. Upgrade of https://play.google.com/store/apps/details?id=com.eas.cordova.browser to cordova 3.4.
     </description>
     <author email="mail@baach.de" href="http://baach.de">
         Joerg Baach

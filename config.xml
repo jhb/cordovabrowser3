@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="de.baach.cordovabrowser3" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="de.baach.cordovabrowser3" version="0.0.2 (cordova 3.4)" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>CordovaBrowser 3</name>
     <description>
-        Allows to run remote cordova/phonegap apps with full access to all cordova apis. Has a refresh button. Upgrade of https://play.google.com/store/apps/details?id=com.eas.cordova.browser
+        Allows to run remote cordova/phonegap apps with full access to all cordova apis. Has a refresh button. Upgrade of https://play.google.com/store/apps/details?id=com.eas.cordova.browser to cordova 3.4.
     </description>
     <author email="mail@baach.de" href="http://baach.de">
         Joerg Baach
